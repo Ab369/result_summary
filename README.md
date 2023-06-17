@@ -22,7 +22,7 @@ It involved making a result summary component design using html and css.
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://result-summary-swart.vercel.app/]
 
 ## My process
 - I made the basic html structure which involved a container with two sections for left and right side of the design.
