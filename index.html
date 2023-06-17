@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result_summary</title>
+    <link rel="shortcut icon" href="assets\images\favicon-32x32.png" type="image/x-icon">
+    <style>
+
+        @media only screen and (max-width: 1500px)
+        {
+            .box {
+            grid-template-rows: 1fr 1fr;
+                }
+        }
+
+        .container {
+            height: 100vh;
+            padding: 50px 300px;
+
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 170px;
+        }
+
+        #box1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px 0px;
+            background: linear-gradient(to bottom, #9608f4, #0800ff);
+            color: white;
+            border-radius: 30px;
+        }
+
+        #box2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0px;
+            border-radius: 30px;
+            box-shadow: 6px 6px 7px rgba(139, 148, 231, 0.4);
+
+        }
+
+        .ratings {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            width: 95%;
+            gap: 5px;
+         }
+
+        .btn {
+            position: relative;
+            top: 45px;
+            border-radius: 20px;
+            height: 40px;
+            width: 230px;
+            background: rgb(27, 29, 74);
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to bottom, #9608f4, #0800ff);
+        }
+
+        .ri {
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
+            align-items: center;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        #r1 {
+            background-color: rgba(246, 3, 31, 0.150);
+            color: rgb(236, 14, 121);
+        }
+
+        #r2 {
+            background-color: rgba(255, 230, 2, 0.15);
+            color: rgb(236, 214, 14);
+
+        }
+
+        #r3 {
+            background-color: rgba(3, 246, 72, 0.15);
+            color: rgb(8, 183, 11);
+
+        }
+
+        #r4 {
+            background-color: rgba(206, 3, 246, 0.15);
+            color: rgb(221, 14, 236);
+
+        }
+
+        .score {
+            position: relative;
+            left: 120px;
+        }
+
+        .quality {
+            position: relative;
+            left: 20px;
+        }
+
+        .ratings img {
+            position: relative;
+            left: 15px;
+        }
+
+        .circle {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(40, 40, 220);
+        }
+
+        .s0 {
+            font-size: 50px;
+        }
+
+        .s1 {
+            font-size: 20px;
+        }
+
+        p {
+            padding: 0px 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- outer container -->
+    <div class="container">
+
+        <!-- make grid -->
+        <!-- parent of both boxes -->
+        <div class="box">
+            <!-- adjust inside box by flexbox -->
+
+            <!-- left section box -->
+            <div id="box1">
+                <h3>Your result</h3>
+
+                <div class="circle">
+                    <span class="s0">76</span>
+                    <span class="s1">of 100</span>
+                </div>
+
+                <h2>Great</h2>
+                <p>You have scored higher than the 65% people who take this test</p>
+
+            </div>
+
+
+            <!-- right section box -->
+            <div id="box2">
+
+                <h3>Summary</h3>
+
+                <!-- make using grid -->
+
+                <!-- rating div of box2 -->
+                <div class="ratings">
+                    <div class="ri" id="r1">
+                        <img src="assets\images\icon-reaction.svg" alt="error">
+                        <span class="quality"> Reaction</span>
+                        <span class="score">80/100</span>
+                    </div>
+
+                    <div class="ri" id="r2">
+                        <img src="assets/images/icon-memory.svg" alt="error">
+                        <span class="quality">Memory </span>
+                        <span class="score">92/100</span>
+                    </div>
+
+                    <div class="ri" id="r3">
+                        <img src="assets\images\icon-verbal.svg" alt="error">
+                        <span class="quality">verbal</span>
+                        <span class="score">61/100</span>
+                    </div>
+
+                    <div class="ri" id="r4">
+                        <img src="assets\images\icon-visual.svg" alt="error">
+                        <span class="quality">Visual</span>
+                        <span class="score">72/100</span>
+                    </div>
+                </div>
+
+                <!-- continue button -->
+                <button class="btn">Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
